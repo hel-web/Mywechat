@@ -1,10 +1,5 @@
 package com.example.mywechat;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,10 +7,15 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Fragment mTab01=new weixinFragment();
     private  Fragment mTab02=new friFragment();
-    private  Fragment mTab03=new contactFragment();
+    private Fragment mTab03= new contactFragment();
     private  Fragment mTab04=new settingFragment();
     private FragmentManager fm;
 
